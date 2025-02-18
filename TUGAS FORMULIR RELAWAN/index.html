@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membuat Form Pendaftaran</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <section class="container">
+    <header>Formulir Pendaftaran Relawan</header>
+    <form class="form" action="#">
+      <div class="input-box">
+      <label>Nama Lengkap</label>
+      <input type="text" placeholder="Masukan Nama Lengkap" required>
+      </div>
+            <div class="input-box">
+      <label>Tanggal Lahir</label>
+      <input type="date" placeholder="Masukan Tanggal Lahir" required>
+      </div>
+      
+        <div class="input-box">
+      <label>Nomer Telepon</label>
+      <input type="number" placeholder="Masukan Nomer Telepon" required>
+      </div>
+         <div class="input-box">
+      <label>Email</label>
+      <input type="text" placeholder="Masukan Email" required>
+      </div>
+      
+      
+        <div class="gender">
+      <h3>Jenis Kelamin</h3>
+      <div class="gender-option">
+        <div class="gdr">
+      <input type="radio" id="pria" name="gender" checked>
+      <label for="pria">Pria</label>
+      </div>
+       <div class="gdr">
+      <input type="radio" id="wanita" name="gender" checked>
+      <label for="wanita">Wanita</label>
+      </div>
+      
+      <div class="input-box adress">
+      <label>Alamat (Domisili Saat Ini)</label>
+      <input type="text" placeholder="Masukan Nama Jalan/Gang" required>
+      <input type="text" placeholder="Masukan Nama Desa" required>
+      <div class="column">
+      <div class="select-box">
+        <select>
+          <option>Kabupaten/Kota</option>
+          <option>Bandung barat</option>
+          <option>Bekasi</option>
+          <option>Bogor</option>
+          <option>Cianjur</option>
+          <option>Cirebon</option>
+          <option>Garut</option>
+          <option>Karawang</option>
+        </select>
+        
+      </div>
+      
+      <input type="text" placeholder="Masukan Nama Kecamatan" required>
+      </div>
+      <div class="column">
+        <input type="number" placeholder="Masukan Nomer Kode Pos" required>
+      </div>
+      <h2>Informasi Pendidikan Dan Pekejaan</h2>
+              <div class="input-box">
+      <label>Pendidikan terakhir</label>
+      <input type="text" placeholder="Misal SMA/S1, D3, Dll" required>
+      </div>
+          <div class="input-box">
+      <label>Pekerjaan Saat Ini Mahasiswa, Pelajar, Dll</label>
+      <input type="text" placeholder="Sebutkan" required>
+      </div>
+              <div class="input-box">
+      <label>Keahlian Dan Kompetensi</label>
+      <input type="text" placeholder="Misal Public Speaking, Desain, Penulis, Dll" required>
+      </div>
+      <h2>Pengalaman Dan Motivasi</h2>
+              <div class="gender">
+      <h3>Pernah Menjadi Volunteer?</h3>
+      <div class="gender-option">
+        <div class="gdr">
+      <input type="radio" id="ya" name="gender" checked>
+      <label for="ya">Ya</label>
+      </div>
+       <div class="gdr">
+      <input type="radio" id="tidak" name="gender" checked>
+      <label for="Tidak">Tidak</label>
+      </div>
+               <div class="input-box">
+      <input type="text" placeholder="Jika Ya Sebutkan" required>
+      </div>
+              <div class="input-box">
+      <label>Motivasi Bergabung, Kenapa Ingin Menjadi Volunteer ?</label>
+      <input type="text" placeholder="Sebutkan" required>
+            <h3>Bidang Yang Diminati?</h3>
+      <div class="gender-option">
+        <div class="gdr">
+      <input type="radio" id="edukasi" name="gender" checked>
+      <label for="Edukasi">Edukasi</label>
+      </div>
+       <div class="gdr">
+      <input type="radio" id="sosial" name="gender" checked>
+      <label for="Kesehatan">Sosial</label>
+      </div>
+             <div class="gdr">
+      <input type="radio" id="kesehatan" name="gender" checked>
+      <label for="Kesehatan">Kesehatan</label>
+      </div>
+           <div class="gdr">
+      <input type="radio" id="lingkungan" name="gender" checked>
+      <label for="Lingkungan">Lingkungan</label>
+      </div>
+             <div class="gdr">
+      <input type="radio" id="dll" name="gender" checked>
+      <label for="Dll">Dll</label>
+      </div>
+      
+      <h2>Ketersediaan Waktu & Lokasi</h2>
+           <div class="input-box">
+      <label>Bersedia Volunteer Di Kota Mana?</label>
+      <input type="text" placeholder="Sebutkan" required>
+      </div>
+           <div class="input-box time">
+      <label>Waktu Yang Bisa Disediakan</label>
+        <select>
+          <option>Weekend</option>
+          <option>Weekday</option>
+          <option>Full-time</option>
+          <option>Part-time</option>
+        </select>
+        
+      </div>
+  <div class="input-box">
+    <h2>Upload Dokumen & Persetujuan</h2>
+    
+    <form action="#" method="post" enctype="multipart/form-data">
+      <label for="cv">Upload Cv Atau Surat Motivasi (Opsional):</label>
+      <input type="file" id="cv" name="cv">
+       <label for="foto">Upload Foto Atau Ktp (Jika Diperlukan):</label>
+       <input type="file" id="foto" name="foto">
+       
+       <input type="checkbox" id="persetujuan" name="persetujuan" required>
+       <label for="persetujuan">Saya Setuju Dengan Syarat & Ketentuan</label>
+       
+      
+      
+      
+    </form>
+  </div>
+
+      
+
+      <button>Kirim Formulir</button>
+      
+    </form> 
+    </section>
+    
+  </body>
+</html>
